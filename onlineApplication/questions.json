@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "no":"1",
+      "ques":"Which of the following is correct for Angular?",
+      "options":[ "It is a Single Page Application","Implements client-side MVW pattern","Focused on Testing","All of the above"],
+      "correct_option":4,
+      "ans":"All of the above"
+    },
+    {
+      "no":"2",
+      "ques":"Angular is an open source JavaScript framework to build web applications in HTML and JavaScript and has been conceived as a _______.",
+      "options":["mobile first approach","UI first approach","web first approach","All of the above"],
+      "correct_option":1,
+      "ans":"mobile first approach"
+    },
+    {
+      "no":"3",
+      "ques":"On the opposite side of event bindings (()) lie Angular'ssquare-bracket syntax ([]) which signifies a______________.",
+      "options":["property binding","class binding","style binding","a and b"],
+      "correct_option":1,
+      "ans":"property binding"
+    },
+    {
+      "no":"4",
+      "ques":"What are the possible ways for two-way data binding in Angular?",
+      "options":["{(ngmodel)}","bindon-ngModel","Bind-src","a and b"],
+      "correct_option":4,
+      "ans":"a and b({(ngModel}) and bindon-ngModel"
+    },
+    {
+      "no":"5",
+      "ques":"What are the code bundlers used in market?",
+      "options":["Webpack","Grunt","Gulp","All of the above"],
+      "correct_option":4,
+      "ans":"All of the above"
+    }
+  ]
+  
+}

@@ -1,0 +1,30 @@
+<div class="container" *ngIf="uname > '0'">
+  <div class="row">
+    <div class="col-lg-10">
+      <div class="card">
+        <div class="col-lg-8">
+          <br>
+            <h2>Angular Test Questions</h2>
+        </div>
+          <br>
+        <div class="card-body">
+          <div *ngFor="let q of questions let i=index">
+            <p>{{q.no}} {{q.ques}}</p>
+              <p *ngFor="let o of q.options let x=index">
+                <input type="radio" name={{q.no}} value={{o}} (click)="selected(x+1,i)">{{o}}
+              </p>
+              <hr>
+            <br>  
+            </div> 
+          </div>
+        {{msg}}
+      </div>
+    <div class="col-lg-2"><button (click)="calculate()">Submit</button></div>
+    </div>
+  </div>
+</div>
+<div>
+    <h1>{{ms}}</h1>
+    
+</div>
+  

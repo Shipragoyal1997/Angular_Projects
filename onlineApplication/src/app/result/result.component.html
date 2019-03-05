@@ -1,0 +1,22 @@
+<div *ngIf="uname > '0'">
+<div class="container"><h1>Your Score is {{msg}} out of 5</h1><h2 *ngIf="msg >'3'" style="color:green">Pass</h2><h2 *ngIf="msg<'3'" style="color:red">Fail</h2></div>
+<br>
+<div class="card">
+        <div class="col-lg-8">
+          <br>
+            <h2>Test Answers</h2>
+        </div>
+          <br>
+        <div class="card-body">
+          <div *ngFor="let q of questions let i=index">
+            <p>Q {{q.no}} {{q.ques}}</p>
+              <h6>Ans.</h6><p>{{q.ans}}</p>
+              <hr>
+            <br>  
+            </div> 
+          </div>
+      </div>
+    </div>
+<div *ngIf="uname <'0'">
+    <h1>Session Is Not Available!</h1>
+</div>

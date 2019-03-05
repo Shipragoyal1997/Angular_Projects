@@ -1,0 +1,14 @@
+<div class="container">
+    <h2 text-align="center">Login Now!</h2>
+    <br>
+    <div class="alert alert-danger" role="alert" *ngIf="msg">
+        {{msg}}
+    </div>  
+      <input type="name" class="form-control" placeholder="Enter Your Name" [(ngModel)]="uname">
+      <br>
+      <input type="password" class="form-control" placeholder="Enter Your password" [(ngModel)]="password">
+      <br>
+      <button type="submit" class="btn btn-primary" (click)="authenticateDetails()">Submit</button>
+</div>
+
+    
